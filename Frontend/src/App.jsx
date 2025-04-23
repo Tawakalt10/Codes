@@ -9,6 +9,7 @@ import PaymentSuccess from "./pages/PaymentSuccess";
 
 import ProcessingPage from "./components/ProcessingPage";
 import PaymentModal from "./components/PaymentModal";
+import Checkout from "./components/Checkout";
 
 // import FindMeds from "./pages/FindMeds";
 import SearchPage from "./pages/SearchPage";
@@ -31,7 +32,12 @@ function App() {
 
       <Route path="/processing" element={<ProcessingPage />} />
 
+<<<<<<< Updated upstream
       <Route path="/paymentmodal" element={<PaymentModal />} />
+=======
+      <Route path="/payment-modal" element={<PaymentModal />} />
+      <Route path="/checkout-cart" element={<Checkout />} />
+>>>>>>> Stashed changes
 
       <Route
         path="/findmeds"
