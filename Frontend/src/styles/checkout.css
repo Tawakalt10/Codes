@@ -1,78 +1,85 @@
-/* Cart.css */
-.cart-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #fff;
-  }
-  
-  .cart-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .cart-table {
-    width: 100%;
-  }
-  
-  .table-header,
-  .table-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .table-header span,
-  .table-row span {
-    flex: 1;
-    text-align: center;
-  }
-  
-  .table-header {
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  .table-row {
-    align-items: center;
-  }
-  
-  .actions {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-  }
-  
-  .action-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 5px;
-  }
-  
-  .checkout {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
-  }
-  
-  .checkout-btn {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .checkout-btn:hover {
-    background-color: #e0e0e0;
-  }
+/* src/components/Cart.module.css */
+.cartContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.user,
+.date {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  border: 1px solid #ccc;
+}
+
+.table td {
+  border-right: 1px solid #eee;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table td:last-child,
+.table th:last-child {
+  border-right: none;
+}
+
+.actionButton {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 5px;
+}
+
+.actionButton:hover {
+  color: #007bff;
+}
+
+.checkoutContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.checkoutButton {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkoutButton:hover {
+  background-color: #e0e0e0;
+}
